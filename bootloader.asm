@@ -52,6 +52,10 @@ bits 16
 ;-------------------------------------------------------------------------------
 global _main
 
+;-------------------------------------------------------------------------------
+; Call the subroutine to set up the stack
+; Halts the central processing unit (CPU) 
+;-------------------------------------------------------------------------------
 _main:
     call _setup_stack  ; Call the subroutine to set up the stack
     hlt                ; Halts the central processing unit (CPU) 

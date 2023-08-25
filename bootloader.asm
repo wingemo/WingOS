@@ -62,6 +62,7 @@ _main:
 ; This subroutine initializes the stack segment (SS) and stack pointer (SP) to
 ; establish a functional stack for the bootloader. The stack is crucial for
 ; temporarily storing data during program execution and subroutine calls.
+;-------------------------------------------------------------------------------
 _setup_stack:
     mov ss, 0         ; Initialize the Stack Segment (SS) with value 0
     mov sp, 0x7C00    ; Set the Stack Pointer (SP) to memory address 0x7C00

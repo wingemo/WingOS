@@ -39,12 +39,12 @@
 ; Set the origin point of the program to memory address 0x7C00.
 ; This address is commonly used for bootloaders to ensure proper memory location.
 ;-------------------------------------------------------------------------------
-org 0x7C00
+[ORG 0x7C00]
 
 ;-------------------------------------------------------------------------------
 ; Specify 16-bit instructions.
 ;-------------------------------------------------------------------------------
-bits 16
+[BITS 16]
 
 ;-------------------------------------------------------------------------------
 ; Entry point of the program.
